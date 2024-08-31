@@ -1,7 +1,7 @@
-main:main.c
-	gcc -o main main.c
-make.c:
-	echo "HelloWorld"
+main:main.o
+	gcc -o main main.o
+main.o:
+	gcc -c main.c
 clean:
 	rm main
 	rm main.c
